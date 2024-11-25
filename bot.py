@@ -6,6 +6,7 @@ import database
 bot = telebot.TeleBot('8198591781:AAFgA21EQ30eJOS9CFjkRRuWkKQ-Apdzi3k')  # Replace 'YOUR_BOT_TOKEN' with your actual token
 users = {}
 
+
 @bot.message_handler(commands=['start'])
 def start(message):
     user_id = message.from_user.id
